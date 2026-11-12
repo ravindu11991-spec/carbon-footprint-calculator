@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* General Page Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ece9dd; /* Warm organic cream */
+  color: #333;
+}
+
+/* Fixed Navigation Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(11, 33, 17, 0.7);
+
+  /* I added frosted-glass effect - But not in syllabus */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header.scrolled {
+  background: rgba(11, 33, 17, 0.9);
+  padding: 10px 8%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo Styling */
+.logo {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Navigation Menu */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #8effa9;
+}
+
+/* Homepage Hero Banner */
+.hero {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1473773508845-188df298d2d1");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Text Container */
+.overlay {
+  background: rgba(11, 33, 17, 0.6);
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+/* Call to Action Button */
+.btn {
+  background: #2ecc71;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 40px;
+  text-decoration: none;
+  /* Add this line below */
+  display: inline-block;
+  margin-top: 25px;
+}
+
+/* Sustainability Information Section */
+.info-section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+/* Topic Cards Layout */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px 10%;
+}
+
+/* Individual Topic Card */
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card h3,
+.card p {
+  padding: 20px;
+}
+
+/* Internal Page Banner Styling */
+.page-banner {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+
+.waste-banner {
+  background: url("https://images.unsplash.com/photo-1528323273322-d81458248d40");
+  background-size: cover;
+}
+
+.fashion-banner {
+  background: url("https://images.unsplash.com/photo-1496747611176-843222e1e57c");
+  background-size: cover;
+}
+
+.energy-banner {
+  background: url("https://images.unsplash.com/photo-1466611653911-95081537e5b7");
+  background-size: cover;
+}
+
+/* Sustainability Tips Grid */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.tip-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Carbon Calculator Background Section */
+.calculator-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1497436072909-60f360e1d4b1");
+  background-size: cover;
+}
+
+/* Calculator Container */
+.calculator-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Form Input Styling */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Calculator Button Styling */
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #2ecc71;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
