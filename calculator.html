@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title -->
+    <title>Carbon Calculator</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+<header>
+  <!-- Logo section -->
+  <div class="logo">
+    <img src="Logo.png" alt="Eco Future Logo">
+    <span>Eco Future</span>
+  </div>
+   <!-- Navigation menu -->
+  <nav>
+    <ul>
+      <!-- Links to other pages -->
+      <li><a href="index.html">Home</a></li>
+      <li><a href="waste.html">Waste Reduction</a></li>
+      <li><a href="fashion.html">Ethical Fashion</a></li>
+      <li><a href="energy.html">Renewable Energy</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- Main calculator section -->
+    <section class="calculator-section">
+      <!-- Box container for calculator -->
+      <div class="calculator-box">
+        <!-- Page heading -->
+        <h1>Carbon Footprint Calculator</h1>
+
+        <!-- Form for user input -->
+        <form id="carbonForm">
+          <!-- Electricity input -->
+          <label>Monthly Electricity Usage</label>
+          <input type="number" id="electricity" required />
+
+          <!-- Car mileage input -->
+          <label>Weekly Car Mileage</label>
+          <input type="number" id="car" required />
+
+          <!-- Flights input -->
+          <label>Flights Per Year</label>
+          <input type="number" id="flights" required />
+
+          <!-- Submit button -->
+          <button type="submit">Calculate</button>
+        </form>
+
+        <!-- Calculator results displayed here -->
+        <div id="result"></div>
+      </div>
+    </section>
+
+    <!-- External JavaScript file for calculator functionality -->
+    <script src="js/calculator.js"></script>
+  </body>
+  <!-- Footer section -->
+  <footer>
+      <p>© 2026 Ravindu Alensumunige</p>
+    </footer>
+  </body>
+</html>
